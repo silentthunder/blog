@@ -28,8 +28,9 @@
 		<property name="configuration" ref="jmsConfig" />
 	</bean>
 
-	<camel:camelContext>
-		<camel:contextScan />
+	<camel:camelContext autoStartup="false">
+		<camel:contextScan/>
 	</camel:camelContext>
-
+	<!-- wish to set autoCreateComponents to false on CamelContext -->
+	
 </beans>
